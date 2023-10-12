@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santo Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Santo Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name<input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email<input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+        /></label>
+        <label for="age" id="number-label"
+          >Age (optional)<input
+            type="number"
+            id="number"
+            name="number"
+            required
+            placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="definitely"
+          ><input type="radio" name="definitely" value="" /> Definitely</label
+        >
+        <label for="maybe"
+          ><input type="radio" name="maybe" value="1" /> Maybe</label
+        >
+        <label for="not-sure"
+          ><input type="radio" name="not-sure" value="2" /> Not sure</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="hobby"
+          >Select your hobbies:
+          <input type="checkbox" id="hobby1" name="hobbies" value="reading" />
+          <label for="hobby1">Reading</label>
+          <input type="checkbox" id="hobby2" name="hobbies" value="traveling" />
+          <label for="hobby2">Traveling</label>
+          <input type="checkbox" id="hobby3" name="hobbies" value="sports" />
+          <label for="hobby3">Sports</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="hobby"
+          >Additional Comments:
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comments"
+          ></textarea>
+        </label>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <!-- <body>
+        <header>
+          <h1 id="title">Survey Form</h1>
+        </header>
+        <section>
+          <p id="description">Please take a moment to complete our survey.</p>
+        </section>
+        <form id="survey-form">
+          <fieldset>
+            <label for="name" id="name-label"
+              >Name
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <label for="name" id="email-label"
+              >Email
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <label for="name" id="number-label"
+              >Age
+              <input
+                type="number"
+                id="number"
+                name="age"
+                placeholder="Enter your age"
+                min="18"
+                max="99"
+                required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Select your favorite color:</legend>
+            <select id="dropdown" name="color" required>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </fieldset>
+          <fieldset>
+            <legend>Select your hobbies:</legend>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading" />
+            <label for="hobby1">Reading</label>
+            <input
+              type="checkbox"
+              id="hobby2"
+              name="hobbies"
+              value="traveling"
+            />
+            <label for="hobby2">Traveling</label>
+            <input type="checkbox" id="hobby3" name="hobbies" value="sports" />
+            <label for="hobby3">Sports</label>
+          </fieldset>
+          <fieldset>
+            <legend>Additional Comments:</legend>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Enter your comments"
+            ></textarea>
+          </fieldset>
+          <button type="submit" id="submit">Submit</button>
+        </form> -->
+  </body>
+</html>
